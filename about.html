@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+</head>
+
+<body>
+    <!-- NavBar- starts -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">BIT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar- ends -->
+    <!-- container starts -->
+    <div class="container-fluid pt-3">
+        <!-- container-in- starts -->
+        <div class="container-fluid pt-3">
+            <!-- breadcrum starts -->
+
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item" aria-current="page">About</li>
+                </ol>
+            </nav>
+
+
+            <!-- breadcrum ends -->
+            <!-- div tag for heading and single line para starts -->
+            <div class="para">
+                <h2>About Our Internship Program</h2>
+                <p>This page demonstrates how Bootstrap components can be used to build structured and responsive
+                    layouts.</p>
+
+            </div>
+            <!-- div tag for heading and single line para ends -->
+            <!-- div tag for image and para starts -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 border border-black rounded p-2">
+                        <h4>Froentend Focus</h4>
+                        <p>Interns learn HTML,Bootstrap,responsiveness and UI Components.</p>
+                    </div>
+
+                    <div class="col-6 border border-black rounded p-2">
+                        <h4>Hands-on-Learning</h4>
+                        <p>Practical approach with real UI layouts and Components.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- div tag for image and para ends -->
+            <!-- div tag for table and progress starts -->
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-8">
+                        <h4>What Interns Will Practice</h4>
+                        <table class="table table-light table-bordered mt-2 ps-5 ">
+                            <tr>
+                                <th class="bg-info text-black">Topic</th>
+                                <th class="bg-info text-black">Status</th>
+                            </tr>
+                            <tr>
+                                <td>Boostrap Grid</td>
+                                <td><button class="btn btn-success">Completed</button></td>
+                            </tr>
+                            <tr>
+                                <td>Components</td>
+                                <td><button class="btn btn-primary">In-Progress</button></td>
+                            </tr>
+                            <tr>
+                                <td>Responsive Layout</td>
+                                <td><button class="btn btn-warning">Upcoming</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- div for progress starts -->
+
+                    <div class="container col-4 mt-4" style="max-width: 500px;">
+
+                        <h5 class="mb-3">Learning Progress</h5>
+
+                        <!-- HTML Progress -->
+                        <div class="mb-3">
+                            <label class="fw-semibold mb-1">HTML</label>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 80%;">
+                                    80%
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bootstrap Progress -->
+                        <div>
+                            <label class="fw-semibold mb-1">Bootstrap</label>
+                            <div class="progress">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 60%;">
+                                    60%
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- div for progress ends -->
+                </div>
+
+            </div>
+            <!-- div tag for table and progress ends -->
+            <!-- div for bottom accordion starts here-->
+            <div class="container mt-4" style="max-width: 700px;">
+
+                <!-- Tabs -->
+                <ul class="nav nav-tabs mb-3">
+                    <li class="nav-item">
+                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#mission">
+                            Mission
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#vision">
+                            Vision
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Tab Content -->
+                <div class="tab-content mb-4">
+                    <div class="tab-pane fade show active" id="mission">
+                        <p>Our mission is to train interns with practical frontend skills.</p>
+                    </div>
+
+                    <div class="tab-pane fade" id="vision">
+                        <p>Our vision is to build industry-ready developers.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Title -->
+                <h5 class="fw-bold mb-3">Frequently Asked Questions</h5>
+
+                <!-- Accordion -->
+                <div class="accordion" id="faqAccordion">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq1">
+                                Do we write custom CSS?
+                            </button>
+                        </h2>
+
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                No. We use only Bootstrap utility classes.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!--div for bottom accordion ends here  -->
+
+
+
+        </div>
+        <!-- container-in- ends -->
+    </div>
+    <!-- container ends -->
+    <!-- footer starts -->
+    <footer class="bg-dark text-white pt-4 text-center ">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 text-center">
+                    <h5>Bannari Amman Institute of Technology</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, harum neque quo perspiciatis
+                        sunt, voluptas quidem praesentium dolorum ea aliquam ducimus, quae numquam facilis suscipit eum
+                        nulla eos libero repellat iure eius porro modi debitis. Doloribus dolorem, ipsam voluptates
+                        maiores non commodi at accusantium ducimus a totam! Nisi, iure. Reiciendis?</p>
+                </div>
+                <div class="col-4 text-center">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled hov-effect">
+                        <li><a class="text-white text-decoration-none" href="#">Home</a></li>
+                        <li><a class="text-white text-decoration-none" href="about.html">About</a></li>
+                        <li><a class="text-white text-decoration-none" href="contact.html">Contact</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-4">
+                    <h5>BIT Login</h5>
+                    <p>Login to our LMS Portal and enjoy the greater learning experience</p>
+                    <button class="btn btn-danger  bg-success">Login</button>
+
+                </div>
+            </div>
+            <hr>
+            <div class="text-center pb-3">
+                &copy; 2025 | Bannari Amman Institute of Technology | All rights reserved
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- footer ends -->
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</html>
